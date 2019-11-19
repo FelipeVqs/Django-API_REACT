@@ -33,7 +33,7 @@ export class Login extends Component {
           <h2 className="text-center">Login</h2>
           <form onSubmit={this.onSubmit}>
             <div className="form-group">
-              <label>Username</label>
+              <label>Usuário</label>
               <input
                 type="text"
                 className="form-control"
@@ -44,7 +44,7 @@ export class Login extends Component {
             </div>
 
             <div className="form-group">
-              <label>Password</label>
+              <label>Senha</label>
               <input
                 type="password"
                 className="form-control"
@@ -60,7 +60,7 @@ export class Login extends Component {
               </button>
             </div>
             <p>
-              Don't have an account? <Link to="/register">Register</Link>
+              Não tem uma conta? <Link to="/register">Registrar</Link>
             </p>
           </form>
         </div>
@@ -73,7 +73,4 @@ const mapStateToProps = state => ({
   isAuthenticated: state.auth.isAuthenticated
 });
 
-export default connect(
-  mapStateToProps,
-  { login }
-)(Login);
+export default connect(mapStateToProps, { login })(Login);

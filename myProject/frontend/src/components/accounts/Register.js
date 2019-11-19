@@ -43,10 +43,10 @@ export class Register extends Component {
     return (
       <div className="col-md-6 m-auto">
         <div className="card card-body mt-5">
-          <h2 className="text-center">Register</h2>
+          <h2 className="text-center">Registro</h2>
           <form onSubmit={this.onSubmit}>
             <div className="form-group">
-              <label>Username</label>
+              <label>Usuário</label>
               <input
                 type="text"
                 className="form-control"
@@ -56,7 +56,7 @@ export class Register extends Component {
               />
             </div>
             <div className="form-group">
-              <label>Email</label>
+              <label>E-mail</label>
               <input
                 type="email"
                 className="form-control"
@@ -66,7 +66,7 @@ export class Register extends Component {
               />
             </div>
             <div className="form-group">
-              <label>Password</label>
+              <label>Senha</label>
               <input
                 type="password"
                 className="form-control"
@@ -76,7 +76,7 @@ export class Register extends Component {
               />
             </div>
             <div className="form-group">
-              <label>Confirm Password</label>
+              <label>Confirme sua Senha</label>
               <input
                 type="password"
                 className="form-control"
@@ -87,11 +87,11 @@ export class Register extends Component {
             </div>
             <div className="form-group">
               <button type="submit" className="btn btn-primary">
-                Register
+                Registrar
               </button>
             </div>
             <p>
-              Already have an account? <Link to="/login">Login</Link>
+              Já tem uma conta? <Link to="/login">Logue-se aqui</Link>
             </p>
           </form>
         </div>
@@ -104,7 +104,4 @@ const mapStateToProps = state => ({
   isAuthenticated: state.auth.isAuthenticated
 });
 
-export default connect(
-  mapStateToProps,
-  { register, createMessage }
-)(Register);
+export default connect(mapStateToProps, { register, createMessage })(Register);
