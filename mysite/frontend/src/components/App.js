@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
 
 import Header from "./layout/header";
+import Dashboard from "./dashboard/dashboard";
 
 import { Provider } from "react-redux";
 import store from "../store";
@@ -10,7 +11,11 @@ class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <Header />;
+        <Fragment>
+          <div className="container">
+            <Dashboard />
+          </div>
+        </Fragment>
       </Provider>
     );
   }

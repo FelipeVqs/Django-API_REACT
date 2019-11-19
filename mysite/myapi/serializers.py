@@ -6,4 +6,4 @@ from .models import Usuario
 class UsuarioSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Usuario
-        fields = ('nome', 'sobrenome', 'email')
+        fields = ('id','nome', 'sobrenome', 'email')

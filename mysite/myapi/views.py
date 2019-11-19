@@ -7,6 +7,6 @@ from .serializers import UsuarioSerializer
 from .models import Usuario
 
 
-class HeroViewSet(viewsets.ModelViewSet):
+class UsuarioViewSet(viewsets.ModelViewSet):
     queryset = Usuario.objects.all().order_by('nome')
     serializer_class = UsuarioSerializer
