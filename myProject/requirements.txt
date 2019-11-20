@@ -1,0 +1,11 @@
+cffi==1.13.2
+cryptography==2.8
+Django==2.2.7
+django-rest-knox==4.1.0
+djangorestframework==3.10.3
+env==0.1.0
+pycparser==2.19
+pytz==2019.3
+six==1.13.0
+sqlparse==0.3.0
+virtualenv==16.7.7
